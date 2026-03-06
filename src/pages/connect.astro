@@ -1,0 +1,70 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Connect | Divyansh Singh">
+
+<section class="section">
+  <h2 class="section-title">Connect</h2>
+
+  <!-- LinkedIn Section -->
+
+  <div class="linkedinConnect">
+
+    <svg class="linkedinIcon" viewBox="0 0 24 24">
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.476-.9 1.637-1.85 3.368-1.85 3.6 0 4.268 2.37 4.268 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.814 20.452H3.86V9h2.954v11.452z"/>
+    </svg>
+
+    <div>
+      <p class="role">Let's Connect on LinkedIn</p>
+
+      <p class="sub">
+        The best way to connect professionally is through LinkedIn. 
+        Feel free to reach out, explore my background, or start a conversation.
+      </p>
+
+      <a class="linkedinButton"
+         href="https://www.linkedin.com/in/divyansh-singh-0214112a5"
+         target="_blank">
+        Connect on LinkedIn
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section">
+
+  <h2 class="section-title">Send a Message</h2>
+
+  <form action="https://formspree.io/f/xdawnvon" method="POST" class="contactForm">
+
+    <input
+      type="text"
+      name="name"
+      placeholder="Your Name"
+      required
+    />
+
+    <input
+      type="email"
+      name="email"
+      placeholder="Your Email"
+      required
+    />
+
+    <textarea
+      name="message"
+      rows="6"
+      placeholder="Your Message"
+      required
+    ></textarea>
+
+    <button type="submit">Send Message</button>
+
+  </form>
+
+</section>
+
+</BaseLayout>
