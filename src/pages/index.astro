@@ -11,9 +11,7 @@ const experience = [
     org: "Capgemini",
     leftMeta: ["Atlanta, GA", "Jun 2025 – Aug 2025"],
     role: "Data Consulting Intern",
-    photos: [
-  `${import.meta.env.BASE_URL}CapG1.jpg`,
-  `${import.meta.env.BASE_URL}CapG2.jpg`
+    photos: ["/CapG1.jpg", "/CapG2.jpg",
 ],
     bullets: [
       "Led a strategic case study on integrating AI solutions to drive business growth and operational efficiency.",
@@ -62,14 +60,14 @@ const certifications = [
 <BaseLayout title="Divyansh Singh | Portfolio">
   <div class="pageShell">
     <!-- Make sure this file exists in /public exactly as written -->
-    <img class="longBackground" src={`${import.meta.env.BASE_URL}background.jpg`} alt="" aria-hidden="true" />
+      <img class="longBackground" src="/background.jpg" alt="" aria-hidden="true" />
 
     <!-- HOME -->
     <section id="home" class="section">
       <div class="card heroIntro">
 
         <div class="homeCenter">
-          <img class="pfpHome" src={`${import.meta.env.BASE_URL}profile_photo.png`} alt="Divyansh Singh" />
+         <img class="pfpHome" src="/profile_photo.png" alt="Divyansh Singh" />
 
           <div class="nameDecor" aria-hidden="true">
             <span class="decorLine"></span>
@@ -193,7 +191,7 @@ Turning data, strategy, and technology into practical business solutions.
     <p class="sectionLabel">Beyond the Office</p>
 
     <div class="outsideHeader">
-      <img class="soccerPhoto" src={`${import.meta.env.BASE_URL}soccer.jpeg`} alt="Youth soccer tournament medal" />
+      <img class="soccerPhoto" src="/soccer.jpeg" alt="Youth soccer tournament medal" />
 
       <h2 class="outsideTitle">Soccer</h2>
 
